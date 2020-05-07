@@ -9,6 +9,7 @@
     integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
@@ -57,118 +58,126 @@
       </div>
     </div>
   </div>
-  <header class="header">
-    <nav class="navbar navbar-style bg-light">
+  <header class="header sticky-top">
+    <nav class="navbar navbar-expand-md navbar-style bg-light sticky-top">
       <div class="container">
         <div class="navbar-header col-md-3 d-inline">
           <a href=""><img class="logo" src="Saylani_logo.jpg" alt="saylani-logo"></a>
+          <button class="navbar-toggle" style="float: right;" type="button" data-toggle="collapse"
+            data-target="#navebarResponsive">
+            <span class="navbar-toggler-icon"><i class="fa fa-bars"></i> </span>
+          </button>
         </div>
         <div class="d-inline">
-          <ul class="d-inline" style="list-style: none;">
-            <li class="nav-item">
-              <a class="nav-link active bg-primary text-white rounded-left rounded-right" href="index.html">Home</a>
-            </li>
-          </ul>
-        </div>
-        <div class="dropdown d-inline" style="border-radius:circle;list-style: none;"">
-            <button type=" button" class="btn btn-light dropdown-toggle" data-toggle="dropdown">
-          About
-          </button>
-          <div class="dropdown-menu">
-            <li><a class="dropdown-item" href="https://www.saylaniwelfare.com/Introduction">Introduction</a>
-              <a class="dropdown-item" href="https://www.saylaniwelfare.com/Chairman-Message">Chairman Message</a>
-              <a class="dropdown-item" href="https://www.saylaniwelfare.com/Saylani-Annual-Report">Saylani Annual
-                Report</a>
-          </div>
-        </div>
-        <div class="dropdown d-inline" style=" border-radius:oval;">
-          <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown">
-            Saylani Services
-          </button>
-          <div class="dropdown-menu">
-            <div class="dropdown dropright d-inline" style="border-radius:circle;">
+          <div class="collapse navbar-collapse" id="navebarResponsive">
+            <ul class="navbar-nav ml-auto " style="list-style: none;float: left;">
+              <li class="nav-item">
+                <a class="nav-link active bg-primary text-white rounded-left rounded-right" href="index.html">Home</a>
+              </li>
+              <li class="dropdown d-inline" style="border-radius:circle;list-style: none;"">
+                          <button type=" button" class="btn btn-light dropdown-toggle" data-toggle="dropdown">
+                About
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="https://www.saylaniwelfare.com/Introduction">Introduction</a></li>
+                  <li><a class="dropdown-item" href="https://www.saylaniwelfare.com/Chairman-Message">Chairman
+                      Message</a>
+                  </li>
+                  <li><a class="dropdown-item" href="https://www.saylaniwelfare.com/Saylani-Annual-Report">Saylani
+                      Annual
+                      Report</a></li>
+                </ul>
+              <li class="dropdown d-inline" style=" border-radius:oval;">
+                <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown">
+                  Saylani Services
+                </button>
+                <ul class="dropdown-menu">
+                  <li class="dropdown dropright d-inline" style="border-radius:circle;">
+                    <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown">
+                      Education
+                    </button>
+                    <ul class="dropdown-menu mt-0">
+                      <li class="dropdown dropright d-inline" style="border-radius:circle;">
+                        <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown">
+                          Saylani Mass Trianing
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="https://www.saylaniwelfare.com/SMIT-Programs">SMIT
+                              Program</a></li>
+                          <li><a class="dropdown-item" href="https://www.saylaniwelfare.com/faculty">faculty</a></li>
+                          <li><a class="dropdown-item" href="https://www.saylaniwelfare.com/result">Result</a></li>
+                          <li><a class="dropdown-item" href="https://www.saylaniwelfare.com/Entry-Test-Schedule">Entry
+                              Test
+                              Schedule</a></li>
+                        </ul>
+                      <li><a class="dropdown-item" href="https://www.saylaniwelfare.com/Saylani-Incubator">Saylani
+                          Incubator</a></li>
+                      <li> <a class="dropdown-item" href="https://www.saylaniwelfare.com/Green-House">Green
+                          House</a></li>
+                  </li>
+                </ul>
+              <li><a class="dropdown-item" href="#">Medical</a></li>
+              <li><a class="dropdown-item" href="#">Welfare</a></li>
+              <li><a class="dropdown-item" href="https://www.saylaniwelfare.com/Hajj-Application-Form">Hajj Application
+                  Form</a></li>
+              <li><a class="dropdown-item" href="https://www.saylaniwelfare.com/Saylani-Dastarkhwan">Saylani
+                  Dastarkhwan</a></li>
+              <li><a class="dropdown-item" href="https://www.saylaniwelfare.com/Saylani-RO-Plant">Saylani RO Plant</a>
+              </li>
+              <li><a class="dropdown-item" href="https://www.saylaniwelfare.com/Online-Sadqah">Saylani
+                  Sadqah</a></li>
+              <li><a class="dropdown-item" href="https://www.saylaniwelfare.com/Online-Taweezat-Istikhara">Online
+                  Taweezat/Istekhara</a></li>
+              <li><a class="dropdown-item" href="https://www.saylaniwelfare.com/Saylani-Job-Bank">Saylani job Bank</a>
+              </li>
+              <li><a class="dropdown-item" href="#">Online Quran Academy</a></li>
+              <li><a class="dropdown-item" href="https://www.saylaniwelfare.com/Books">Books</a></li>
+              <li><a class="dropdown-item" href="https://www.saylaniwelfare.com/Masajid-Online-Admission-Form">Saylani
+                  Online Masajid</a></li>
+              </li>
+            </ul>
+            <li class="dropdown" style="display: inline; border-radius:circle">
               <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown">
-                Education
+                Future Project
               </button>
-              <div class="dropdown-menu mt-0">
-                <div class="dropdown dropright d-inline" style="border-radius:circle;">
-                  <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown">
-                    Saylani Mass Trianing
-                  </button>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item" href="https://www.saylaniwelfare.com/SMIT-Programs">SMIT Program</a>
-                    <a class="dropdown-item" href="https://www.saylaniwelfare.com/faculty">faculty</a>
-                    <a class="dropdown-item" href="https://www.saylaniwelfare.com/result">Result</a>
-                    <a class="dropdown-item" href="https://www.saylaniwelfare.com/Entry-Test-Schedule">Entry Test
-                      Schedule</a>
-                  </div>
-                  <a class="dropdown-item" href="https://www.saylaniwelfare.com/Saylani-Incubator">Saylani
-                    Incubator</a>
-                  <a class="dropdown-item" href="https://www.saylaniwelfare.com/Green-House">Green House</a>
-                </div>
-              </div>
-              <a class="dropdown-item" href="#">Medical</a>
-              <a class="dropdown-item" href="#">Welfare</a>
-              <a class="dropdown-item" href="https://www.saylaniwelfare.com/Hajj-Application-Form">Hajj Application
-                Form</a>
-              <a class="dropdown-item" href="https://www.saylaniwelfare.com/Saylani-Dastarkhwan">Saylani
-                Dastarkhwan</a>
-              <a class="dropdown-item" href="https://www.saylaniwelfare.com/Saylani-RO-Plant">Saylani RO Plant</a>
-              <a class="dropdown-item" href="https://www.saylaniwelfare.com/Online-Sadqah">Saylani Sadqah</a>
-              <a class="dropdown-item" href="https://www.saylaniwelfare.com/Online-Taweezat-Istikhara">Online
-                Taweezat/Istekhara</a>
-              <a class="dropdown-item" href="https://www.saylaniwelfare.com/Saylani-Job-Bank">Saylani job Bank</a>
-              <a class="dropdown-item" href="#">Online Quran Academy</a>
-              <a class="dropdown-item" href="https://www.saylaniwelfare.com/Books">Books</a>
-              <a class="dropdown-item" href="https://www.saylaniwelfare.com/Masajid-Online-Admission-Form">Saylani
-                Online Masajid</a>
-            </div>
-          </div>
-        </div>
-        <div class="dropdown" style="display: inline; border-radius:circle">
-          <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown">
-            Future Project
-          </button>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="https://www.saylaniwelfare.com/Saylani-University">Saylani University</a>
-            <a class="dropdown-item" href="https://www.saylaniwelfare.com/Saylani-City">Saylani City</a>
-          </div>
-        </div>
-        <div class="d-inline">
-          <ul class="d-inline">
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="https://www.saylaniwelfare.com/Saylani-University">Saylani
+                    University</a>
+                </li>
+                <li><a class="dropdown-item" href="https://www.saylaniwelfare.com/Saylani-City">Saylani
+                    City</a></li>
+              </ul>
+            </li>
             <li class="nav-item d-inline">
               <a class="nav-link active text-dark rounded-left rounded-right"
                 href="https://www.saylaniwelfare.com/Media">Media</a>
             </li>
-          </ul>
-        </div>
-        <div class="d-inline">
-          <ul style="display: inline;">
             <li class="nav-item d-inline">
               <a class="nav-link active text-dark rounded-left rounded-right"
                 href="https://www.saylaniwelfare.com/News">News</a>
             </li>
-          </ul>
-        </div>
-        <div class="dropdown d-inline" style="border-radius:circle;">
-          <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown">
-            Donation
-          </button>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="https://www.saylaniwelfare.com/Bank-Detail">Bank Details</a>
-            <a class="dropdown-item" href="https://www.saylaniwelfare.com/Sadqah">Sadqah</a>
-            <a class="dropdown-item" href="https://www.saylaniwelfare.com/Aqiqa">Aqiqa</a>
-            <a class="dropdown-item" href="https://www.saylaniwelfare.com/Donation">Other Donation</a>
-            <a class="dropdown-item" href="https://www.saylaniwelfare.com/Corona-Effecties">Corona Effecties</a>
-            <a class="dropdown-item" href="#">Ramazan-2020</a>
-            <a class="dropdown-item" href="https://www.saylaniwelfare.com/Contact-us">Contact us</a>
+            <li class="dropdown d-inline" style="border-radius:circle;">
+              <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown">
+                Donation
+              </button>
+              <ul class="dropdown-menu">
+                <li> <a class="dropdown-item" href="https://www.saylaniwelfare.com/Bank-Detail">Bank
+                    Details</a></li>
+                <li><a class="dropdown-item" href="https://www.saylaniwelfare.com/Sadqah">Sadqah</a>
+                </li>
+                <li><a class="dropdown-item" href="https://www.saylaniwelfare.com/Aqiqa">Aqiqa</a></li>
+                <li><a class="dropdown-item" href="https://www.saylaniwelfare.com/Donation">Other
+                    Donation</a></li>
+                <li><a class="dropdown-item" href="https://www.saylaniwelfare.com/Corona-Effecties">Corona Effecties</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Ramazan-2020</a></li>
+                <li><a class="dropdown-item" href="https://www.saylaniwelfare.com/Contact-us">Contact
+                    us</a></li>
+              </ul>
+            </li>
+            </ul>
           </div>
         </div>
-      </div>
-      </div>
-      </div>
-      </div>
-      </div>
     </nav>
   </header>
   <div class="container-fluid">
@@ -199,13 +208,14 @@
       </div>
     </div>
   </div>
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-12 bg-primary">
-        <i>News-1 Dated:15-06-2019) PIAICNext Phase Admission in Islamabad And Faisalabad" . More Details (News-2
-          Dated:15-05-2019) Saylani Welfare Announced ".</i>
+  <div class="main">
+    <marquee class="marq" bgcolor="Green" direction="left" loop="">
+      <div class="geek1">
+        <font class="news">(News-1 Dated:15-06-2019)</font> PIAICNext Phase Admission in Islamabad And Faisalabad" .
+        <font class="more">More Details</font>
+        <font class="news"> (News-2 Dated:15-05-2019)</font> Saylani Welfare Announced "Donation Application"
       </div>
-    </div>
+    </marquee>
   </div>
   <div class="container d-block">
     <div class="row">
@@ -245,7 +255,7 @@
       </div>
     </div>
   </div>
-  <div class="container-fluid">
+  <div class="container-fluid text-center">
     <div class="row">
       <div class="col-md-3" style="background-color:#0078ff;">
         <div style="text-align: center;padding-top: 5em; display: inline-block;">
@@ -370,7 +380,8 @@
       <div class="row">
         <div class="col-md-8 d-block pt-5 pb-5 ">
           <p class="clear">
-            <h4 style="font-weight: bold;font-family: 'Franklin Gothic Medium', 'Arial Narrow';color: rgba(49, 108, 218, 0.842);">
+            <h4
+              style="font-weight: bold;font-family: 'Franklin Gothic Medium', 'Arial Narrow';color: rgba(49, 108, 218, 0.842);">
               MISSION AND UPCOMING PROJECTS</h4>
           </p>
           <div class="container">
@@ -406,110 +417,128 @@
               UPCOMING EVENT</h4>
           </div>
           <hr>
-          <P>
-            Saylani Welfare Distributing Ration & Clothes to affected people of Balochistan .
-            <a href="https://www.facebook.com/saylaniwelfare/posts/3164679946891260?__tn__=-R">More Details</a><br>
-
-
-            Dr Jamil Ahmed (Additional Inspector General of Police) & Atiqmir Visit Saylani Welfare International Trust,
-            Saylani Mass I.T. Training .
-            <a href="https://www.facebook.com/saylaniwelfare/posts/3124996217526300?__tn__=-R%3E">More Detail</a>
-          </p>
-        </div>
+          <div class="main">
+            <marquee class="marq bg-light" direction="up" loop="">
+              <div class="geek1">
+                <font class="news">(News-1 Dated:15-06-2019)</font> PIAICNext Phase Admission in Islamabad And
+                Faisalabad" .
+                <font class="more"> <a
+                    href="https://www.facebook.com/saylaniwelfare/posts/3164679946891260?__tn__=-R">More Details</a><br>
+                </font>
+                <font class="news"> (News-2 Dated:15-05-2019)</font> Saylani Welfare Announced "Donation Application"
+                <font class="news">(News-1 Dated:15-06-2019)</font> Dr Jamil Ahmed (Additional Inspector General of
+                Police) & Atiqmir Visit Saylani Welfare International Trust,
+                Saylani Mass I.T. Training .
+                <font class="more"><a
+                    href="https://www.facebook.com/saylaniwelfare/posts/3124996217526300?__tn__=-R%3E">More Detail</a>
+                </font>
+              </div>
+            </marquee>
+          </div>
         </div>
       </div>
     </div>
-  <div class="container">
-    <div class="row" style="flex-wrap: wrap;">
-      <div class="col-md-12 text-md-center">
-        <center>
-          <p class=" d-inline-block ">
-            <h1 style="font-family:CALIBRI;font-weight: bold;">
-              <font color="#007bff">IMAGE</font>
-              <font color="green">GALLERY</font>
-            </h1><br>
-            <p style="font-size: 2em;margin-top:-1em ;">
-              <font color="green">____</font><img class="zoo" src="favicon.png" alt="logo">
-              <font color="green">____</font>
+    <div class="container">
+      <div class="row" style="flex-wrap: wrap;">
+        <div class="col-md-12 text-md-center">
+          <center>
+            <p class=" d-inline-block ">
+              <h1 style="font-family:CALIBRI;font-weight: bold;">
+                <font color="#007bff">IMAGE</font>
+                <font color="green">GALLERY</font>
+              </h1><br>
+              <p style="font-size: 2em;margin-top:-1em ;">
+                <font color="green">____</font><img class="zoo" src="favicon.png" alt="logo">
+                <font color="green">____</font>
+              </p>
             </p>
-            <div class="col-md-4 pt-5 d-inline">
-              <img class="gallery thumbnail" src="rashan2.jpg" alt="">
-            </div>
-            <div class="col-md-4 pt-5 d-inline">
-              <img class="gallery thumbnail" src="download (1).jpg" alt="">
-            </div>
-            <div class="col-md-4 pt-5 d-inline">
-              <img class="gallery thumbnail" src="download (2).jpg" alt="">
-            </div>
-            <div class="col-md-4 pt-5 d-inline">
-              <img class="gallery thumbnail" src="download (3).jpg" alt="">
-            </div>
+          </center>
+        </div>
       </div>
     </div>
-    </center>
-  </div>
-  <div class="footer mt-5">
-    <div class="footer-content">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-4 mt-5">
-              <div class="footer-section about">
-              <p>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 mt-2">
+          <img class=" gallery image" src="rashan2.jpg" alt="">
+          <div class="middle">
+            <div> <button class="btn"><i class="fa fa-download"></i> Download</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mt-2 ">
+          <img class="gallery thumbnail image " src="download (1).jpg" alt="">
+          <div class="middle">
+            <div><button class="btn"><i class="fa fa-download"></i> Download</button></div>
+          </div>
+        </div>
+        <div class="col-md-3 mt-2 ">
+          <img class="gallery thumbnail image" src="download (2).jpg" alt="">
+          <div class="middle">
+            <div> <button class="btn"><i class="fa fa-download"></i> Download</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mt-2 ">
+          <img class="gallery thumbnail image" src="download (3).jpg" alt="">
+          <div class="middle">
+            <div> <button class="btn"><i class="fa fa-download"></i> Download</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="page-footer font-small blue pt-4">
+      <div class="container-fluid text-center text-md-left bg-dark">
+        <div class="row">
+          <div class="col-md-6 mt-md-0 text-light" style="font-weight:bold;">
+            <div class=" mt-5 ml-5">
+              <p class="mt-5">
                 Head Office,<br>
                 A-25,Bahadurabad Chowrangi Karachi,Pakistan
               </p><br>
-              <ul class="d-inline" style="font-size:15px;color:white;">
+              <ul class="d-inline " style="font-size:15px;color:white;">
                 <li><i class="fa fa-phone text-theme-colored"></i> UAN: 111-729-526</li><br>
                 <i class="fa fa-phone text-theme-colored"></i> Cell: 92-311-1729526</li><br>
                 <i class="fa fa-phone text-theme-colored"></i> USA NO +1(716)941 7792</li><br>
                 <i class="fa fa-phone text-theme-colored"></i> UK NO(+44)115 970 6256</li><br>
                 <i class="fa fa-envelope text-theme-colored"></i> UAN: info@saylaniwelfare.com<br>
                 <i class="fa fa-globle text-theme-colored"></i> (+0092-213)4130786-90</li><br>
-              </li>
+                </li>
               </ul>
             </div>
+          </div>
+
+          <hr class="clearfix w-100 d-md-none pb-3">
+          <div class="col-md-6 mb-md-0 mb-3 text-light d-block ">
+            <div class=" d-block ml-5 mt-5">
+              <P style="font-family:Verdana, sans-serif;font-weight:bold;">
+                Useful Links
+              </P>
             </div>
-            <div class="col-md-4 mt-5">
-              <div class="footer-section Contact With Us">
-                <P style="font-family:Verdana, sans-serif;font-weight:bold;">
-                  Connect With Us
-                </P>
-              </div>
-            </div>
-            <div class="footer-section Useful links">
-              <div  class="col-md-4 mt-5">
-                <div id="cun" style="font-family:Verdana, sans-serif;font-weight: bold;border-bottom-style:solid;border-color: rgb(165, 155, 155);border-width: 2px;">
-                  Useful links
-                </div>
-               <div class="d-inline">
-                <ul class="d-inline-block">
-                  <li> <a href="https://www.facebook.com/saylaniwelfare/" target"_blank"></a>
-                    <img class="sun" src="facebook-512.webp" class=" mx-auto img-fluid fas-facebook-521.webp alt="
-                      facebook logo"></li>
-                  <li>
-                    <a href="C:\Users\hci\Desktop\WebsiteProject\077_twitter-512.webp" target"_blank"></a>
-                    <img class="sun" src="077_twitter-512.webp" class=" mx-auto img-fluid fas-077_twitter-512.webp alt="
-                      twitter logo">
-                  </li>
-                  <li><a href="https://www.instagram.com/saylaniwelfare/" target"_blank"></a>
-                    <img class="sun" src="C:\Users\hci\Desktop\WebsiteProject\instaaa.png"
-                      class=" mx-auto img-fluid fas-download.png alt=" Insta logo"></li>
-                  <li><a href="https://www.youtube.com/c/SaylaniWelfareTrustOfficialPage" target"_blank"></a>
-                    <img class="sun"
-                      src="C:\Users\hci\Desktop\WebsiteProject\85-856029_youtube-social-icon-logo-joe-eckley-youtube-icon.png"
-                      class=" mx-auto img-fluid fas-facebook-521.webp alt=" facebook logo"></li>
-                </ul>
-              </div>
-            </div>
+
+            <ul class="list-unstyled d-block">
+              <li style="font-weight: bold; display: block;">Connect With us</li>
+              <li> <a href="https://www.facebook.com/saylaniwelfare/" target"_blank"></a>
+                <img class="sun" src="facebook-512.webp" class=" mx-auto img-fluid fas-facebook-521.webp alt=" facebook
+                  logo"></li>
+              <li>
+                <a href="C:\Users\hci\Desktop\WebsiteProject\077_twitter-512.webp" target"_blank"></a>
+                <img class="sun" src="077_twitter-512.webp" class=" mx-auto img-fluid fas-077_twitter-512.webp alt="
+                  twitter logo">
+              </li>
+              <li><a href="https://www.instagram.com/saylaniwelfare/" target"_blank"></a>
+                <img class="sun" src="instaaa.png" class=" mx-auto img-fluid fas-download.png alt=" Insta logo"></li>
+              <li><a href="https://www.youtube.com/c/SaylaniWelfareTrustOfficialPage" target"_blank"></a>
+                <img class="sun" src="85-856029_youtube-social-icon-logo-joe-eckley-youtube-icon.png"
+                  class=" mx-auto img-fluid fas-facebook-521.webp alt=" facebook logo"></li>
+            </ul>
           </div>
         </div>
-        </div>
-            <div class="footer-bottom bg-info">
-              <center> &copy; Copyright © 2020 Saylani Welfare</center>
+        <div class="footer-copyright text-center py-3 bg-primary">
+          <center> &copy; Copyright © 2020 Saylani Welfare</center>
         </div>
       </div>
-    </div>
-    
-
+    </footer>
+</body>
 
 </html>
